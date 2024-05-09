@@ -382,7 +382,7 @@ def _prepare_send_file_kwargs(**kwargs: t.Any) -> dict[str, t.Any]:
         response_class=current_app.response_class,
         _root_path=current_app.root_path,  # type: ignore
     )
-    return kwargs
+    return None
 
 
 def send_file(
